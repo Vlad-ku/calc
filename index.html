@@ -23,6 +23,8 @@
             window.calque = new Calque(input, output);
             input.focus();
         }
+
+        window.onbeforeunload = function() { return ''; } // защита от случайного закрытия
     </script>
 </head>
 <body>
