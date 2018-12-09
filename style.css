@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+
+    background: #222;
 }
 /* весь лист */
 .interface {
@@ -32,6 +34,7 @@ body {
     outline: none;
     background: none;
     resize: none;
+    color: white;
 }
 /* подложка */
 .interface .output { overflow: hidden; }
@@ -39,7 +42,6 @@ body {
 
 .interface .output .prefix:before {
     content: attr(data-prefix);
-    color: #E9E9E9;
 }
 
 .interface .output .data {
@@ -47,5 +49,5 @@ body {
     position: relative;
 }
 
-.interface .output .result { color: silver; }
+.interface .output .result { color: gray; }
 .interface .output .error { color: red; }
